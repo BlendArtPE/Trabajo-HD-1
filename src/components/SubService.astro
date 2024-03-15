@@ -1,0 +1,15 @@
+---
+interface Props {
+    number? : string;
+}
+const {number} = Astro.props
+---
+<div class="bg-black text-white flex flex-row px-8 py-4 gap-20 rounded-2xl items-center">
+    <div>
+        <h1 class="text-xl"><b>Servicio {number}</b></h1>
+        <p>Lorem ipsum dolor sit amet consectetur</p>
+    </div>
+    <div class="text-4xl">
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+</div>

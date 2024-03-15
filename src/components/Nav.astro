@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import logo from '../images/logo.png'
+---
+<nav class="flex flex-row justify-between px-10 pt-8">
+    <ul>
+            <li><Image class="w-32" src={logo} alt="Logo de Medina"/></li>
+    </ul>
+    <ul class="flex flex-row items-center">
+        <li class="py-2 px-12 rounded-md">Locales</li>
+        <li class="py-2 px-12 rounded-md">Servicios</li>
+        <li class="py-2 px-12 rounded-md">Repuestos</li>
+        <li class="py-2 px-12 rounded-md bg-white">Blog</li>
+    </ul>
+</nav>
