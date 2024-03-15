@@ -1,15 +1,19 @@
 ---
 interface Props {
-    number? : string;
+  number?: string;
 }
-const {number} = Astro.props
+const { number } = Astro.props;
 ---
-<div class="bg-black text-white flex flex-row px-8 py-4 gap-20 rounded-2xl items-center">
-    <div>
-        <h1 class="text-xl"><b>Servicio {number}</b></h1>
-        <p>Lorem ipsum dolor sit amet consectetur</p>
-    </div>
-    <div class="text-4xl">
-        <i class="fa-solid fa-chevron-right"></i>
-    </div>
+
+<div
+  class="bg-stone-900 shadow-md shadow-stone-900 text-white hover:bg-white hover:text-black 
+  flex flex-row px-8 py-4 lg:gap-x-10 md:gap-x-2 rounded-2xl items-center "
+>
+  <div>
+    <h1 class="text-xl"><b>Servicio {number}</b></h1>
+    <p>Lorem ipsum dolor sit amet consectetur</p>
+  </div>
+  <div class="text-4xl">
+    <i class="fa-solid fa-chevron-right"></i>
+  </div>
 </div>

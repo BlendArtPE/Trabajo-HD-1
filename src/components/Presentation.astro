@@ -1,13 +1,19 @@
-<header class="flex py-8">
-    <div class="flex-1 flex flex-col p-8">
-        <h1 class="font-semibold text-5xl">
-            <b class="text-red-500">Expertos</b> en reparación de Inyectores Electrónicos y Bombas de Inyección Diesel
+---
+import { Image } from "astro:assets";
+import taller from "../images/taller.png";
+---
+
+<header class="flex sm:flex-row flex-col p-8 justify-center items-center ">
+    <div class="sm:flex-1 flex flex-col ite">
+        <h1 class="sm:font-semibold font-bold sm:text-5xl text-4xl">
+            <strong class="text-red-500">Expertos</strong> en reparación de Inyectores Electrónicos y Bombas de Inyección Diesel
         </h1>
-        <p class="text-xl ">
-            Con una trayectoria destacada en el sector, ofrecemos soluciones avanzadas para la reparación de inyectores electrónicos y bombas de inyección diésel, asegurando el <b>máximo rendimiento y eficiencia</b> de tu flota o vehículo
+        <p class="sm:text-xl text-xs text-justify">
+            Con una trayectoria destacada en el sector, ofrecemos soluciones avanzadas para la reparación de inyectores electrónicos y bombas de inyección diésel, asegurando el <strong>máximo rendimiento y eficiencia</strong> de tu flota o vehículo
         </p>
     </div>
-    <div class="flex-1">
-        <img class="rounded-md" src="https://images.pexels.com/photos/20189629/pexels-photo-20189629/free-photo-of-amor-verano-mesa-hoja.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <div class="sm:flex-1 flex justify-center">
+        <!-- <img class="rounded-xl mx-4 p-4 sm:mx-0 sm:rounded-md sm:p-0" src="https://images.pexels.com/photos/20189629/pexels-photo-20189629/free-photo-of-amor-verano-mesa-hoja.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> -->
+        <Image class="rounded-2xl" src={taller} alt="Taller" />
     </div>
 </header>
