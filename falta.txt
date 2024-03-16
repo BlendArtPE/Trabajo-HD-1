@@ -1,0 +1,3 @@
+falta arreglar algunos paddings y margins
+falta poder omitir la imagen de formulario
+tipografía

@@ -2,3 +2,16 @@
     height: 50px;
     width: 70px;
 }
+
+.magra-regular {
+    font-family: "Magra", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .magra-bold {
+    font-family: "Magra", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
