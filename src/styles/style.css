@@ -1,17 +1,16 @@
-.logo {
-    height: 50px;
-    width: 70px;
+/* https://fonts.google.com/selection/embed */
+
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
-.magra-regular {
-    font-family: "Magra", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .magra-bold {
-    font-family: "Magra", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
   

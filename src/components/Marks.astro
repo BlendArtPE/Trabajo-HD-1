@@ -1,10 +1,19 @@
-<section class="flex justify-center content-center">
-    <ul class="grid lg:grid-cols-6 grid-cols-3  md:gap-x-24  gap-y-10 gap-x-10 py-10">
-        <li class="logo "><img src="https://i.pinimg.com/564x/dc/f1/eb/dcf1ebbb799d558f24b3aee771a6f40d.jpg" alt="Audi"></li>
-        <li class="logo"><img src="https://logolook.net/wp-content/uploads/2022/09/Bosch-Logo.png" alt="Bosh"></li>
-        <li class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Caterpillar-shortened.svg" alt="Cat"></li>
-        <li class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Volkswagen_Logo_till_1995.svg" alt="W"></li>
-        <li class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW"></li>
-        <li class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Suzuki_logo_2.svg" alt="Suzuki"></li>
+---
+import { Image } from "astro:assets";
+import logos1 from "../images/marks/logos-01.png";
+import logos2 from "../images/marks/logos-02.png";
+import logos3 from "../images/marks/logos-03.png";
+import logos4 from "../images/marks/logos-04.png";
+import logos5 from "../images/marks/logos-05.png";
+import logos6 from "../images/marks/logos-06.png";
+---
+<section class="flex justify-center content-center px-2">
+    <ul class="grid lg:grid-cols-6 grid-cols-3  md:gap-x-24 lg:gap-x-20 gap-y-10 gap-x-10 py-10">
+        <li><Image class="w-24" src={logos2} alt="Audi Logo"/></li>
+        <li><Image class="w-24" src={logos1} alt="Bosch Logo"/></li>
+        <li><Image class="w-24" src={logos3} alt="CAT Logo"/></li>
+        <li><Image class="w-24" src={logos4} alt="volkswagen Logo"/></li>
+        <li><Image class="w-24" src={logos5} alt="BMW Logo"/></li>
+        <li><Image class="w-24" src={logos6} alt="Suzuki Logo"/></li>
     </ul>
 </section>

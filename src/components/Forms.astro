@@ -8,54 +8,61 @@ import taller from "../images/taller.png";
     Agenda una revisión <hr /> en nuestro laboratorio
   </h1>
   <div class="flex flex-row justify-center my-6">
-    <!-- <div class="bg-white rounded-l-2xl sm:visible invisible">
-            <Image class="rounded-2xl" src={taller} alt="Taller" />
-        </div> -->
-    <form
-      class="flex flex-col bg-white w-96 p-10 sm:rounded-r-2xl sm:mx-0 rounded-2xl mx-8"
-    >
-      <label class="text-gray-400 pl-2 text-lg font-light" for="fname"
-        >Nombre</label
-      >
-      <input
-        required
-        class=" border border-gray-400 p-2 rounded-xl mb-3"
-        type="text"
-        id="fname"
-        name="fname"
-      />
-      <label class="text-gray-400 pl-2 text-lg font-light" for="femail"
-        >Correo</label
-      >
-      <input
-        required
-        class="border border-gray-400 p-2 rounded-xl mb-3"
-        type="text"
-        id="femail"
-        name="femail"
-      />
-      <label class="text-gray-400 pl-2 text-lg font-light" for="fcellphone"
-        >Celular</label
-      >
-      <input
-        required
-        class="border border-gray-400 p-2 rounded-xl mb-3"
-        type="text"
-        id="fcellphone"
-        name="fcellphone"
-      />
+    <div class="hidden lg:block bg-white rounded-l-2xl triangulos">
+      <div class="triangulob">
+        <Image class="rounded-2xl" src={taller} alt="Taller" />
+      </div>
+    </div>
+    <form class="flex flex-col bg-white w-96 px-10 py-10 lg:py-0 sm:mx-0 mx-8 justify-center lg:rounded-r-2xl rounded-2xl">
+      <label class="text-gray-400 pl-2 text-lg font-light" for="fname">Nombre</label>
+      <input required class="border border-gray-400 p-2 rounded-xl mb-3" type="text" id="fname" name="fname" />
+      <label class="text-gray-400 pl-2 text-lg font-light" for="femail">Correo</label>
+      <input required class="border border-gray-400 p-2 rounded-xl mb-3" type="email" id="femail" name="femail" />
+      <label class="text-gray-400 pl-2 text-lg font-light" for="fcellphone">Celular</label>
+      <input required class="border border-gray-400 p-2 rounded-xl mb-3" type="tel" id="fcellphone" pattern="[0-9]+" name="fcellphone" />
       <div class="flex flex-col items-center">
-        <input
-          class="bg-stone-900 text-white border hover:border-black hover:bg-white hover:text-black  w-full py-1 rounded-full text-2xl font-semibold flex justify-center items-center"
-          type="submit"
-          value="Registrarse"
-        />
-        <div class="flex flex-row bg-gray-300 sm:px-8 px-3 rounded-b-lg items-center ">
-          <i class="fa-solid fa-stopwatch"></i><p class="pl-2">
-            Válido durante <b>15:00</b>
-          </p>
+        <input class="bg-stone-900 text-white border hover:border-black hover:bg-white hover:text-black w-full py-1 rounded-full text-2xl font-semibold flex justify-center items-center" type="submit" value="Registrarse" />
+        <div class="flex flex-row bg-gray-300 sm:px-8 px-3 rounded-b-lg items-center">
+          <i class="fa-solid fa-stopwatch"></i><p class="pl-2">Válido durante <b>15:00</b></p>
         </div>
       </div>
     </form>
   </div>
 </section>
+
+<style>
+  .triangulos{
+    position: relative;
+  }
+  .triangulos::before{
+    content:'';
+    width:0px;
+    height:0px;
+    border-right: 10px solid transparent;
+     border-top: 10px solid transparent;
+     border-left: 10px solid white;
+     border-bottom: 10px solid white;
+    position:absolute;
+    top:0;
+    right: -20px;
+    z-index: 10;
+    transform: rotate(-270deg);
+  }
+  .triangulob{
+    position: relative;
+  }
+  .triangulob::before{
+    content:'';
+    width:0px;
+    height:0px;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
+    position:absolute;
+    bottom:0;
+    right: -20px;
+    z-index: 10;
+    transform: rotate(0deg);
+  }
+</style>
