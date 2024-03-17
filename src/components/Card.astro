@@ -7,10 +7,14 @@
         <img class="rounded-t-3xl" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/CamionFermont.png/1024px-CamionFermont.png" alt="Imagen X">
     </header>
     <div class="p-4">
-        <ul>
-            <li><i class="fa-solid fa-map-location-dot"></i> Av.Honorio Delgado N°320 Urb. Semirústica, El Bosque, Trujillo</li>
-            <li><i class="fa-solid fa-phone"></i> 914817239</li>
-            <li><i class="fa-solid fa-house"></i> Tienda de Repuestos y Laboratorio Diesel</li>
+        <!-- Antes lo tenía como ul pero lo cambie a div por el grid -->
+        <ul class="grid grid-cols-10">
+            <li><i class="fa-solid fa-map-location-dot"></i></li>
+            <p class="col-span-9"> Av.Honorio Delgado N°320 Urb. Semirústica, El Bosque, Trujillo</p>
+            <li><i class="fa-solid fa-phone"></i></li>
+            <p class="col-span-9">914817239</p>
+            <li><i class="fa-solid fa-house"></i></li>
+            <p class="col-span-9">Tienda de Repuestos y Laboratorio Diesel</p>
         </ul>
         <div class="flex flex-row gap-3 text-xl pt-2">
             <button class="flex-1 py-0.5 border border-stone-900 hover:bg-stone-900 hover:text-white rounded-xl">Llamar</button>
